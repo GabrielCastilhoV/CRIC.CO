@@ -1,0 +1,8 @@
+{
+  "name": "CRIC.CO",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/GabrielCastilhoV/CRIC.CO.git",
+  "author": "GabrielCastilhoV <gabrielcastilho70@gmail.com>",
+  "license": "MIT"
+}

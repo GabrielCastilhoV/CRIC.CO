@@ -1,5 +1,5 @@
 import { NextPage } from 'next';
 
-const HomePage: NextPage = () => <h1>Started</h1>;
+const HomePage: NextPage = () => <> </>;
 
 export default HomePage;

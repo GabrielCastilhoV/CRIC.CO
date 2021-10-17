@@ -7,6 +7,7 @@ export const theme = extendTheme({
       700: 'linear-gradient(167.03deg, #282833 2.56%, #121217 97.88%)',
       600: '#4b4944',
       200: '#868686',
+      100: '#C4C4C4',
       50: '#FFF',
     },
     blue: {

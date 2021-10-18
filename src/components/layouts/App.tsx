@@ -8,7 +8,7 @@ interface AppLayout {
 }
 
 export const AppLayout = ({ children }: AppLayout) => {
-  const isMobileVersion = useBreakpointValue({ base: false, lg: true });
+  const isMobileVersion = useBreakpointValue({ base: true, lg: false });
 
   return (
     <Grid h="100vh">
@@ -17,7 +17,9 @@ export const AppLayout = ({ children }: AppLayout) => {
         w="100%"
         templateColumns={['100%', '100%', '100%', '266px 1fr']}
       >
-        {isMobileVersion ? <Sidebar /> : <Header />}
+        <Sidebar />
+        {isMobileVersion && <Header />}
+
         {children}
       </Grid>
     </Grid>

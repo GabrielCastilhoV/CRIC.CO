@@ -9,11 +9,11 @@ const MyApp = ({ Component, pageProps }: AppProps) => {
   return (
     <>
       <ChakraProvider theme={theme}>
-        <AppLayout>
-          <SidebarDrawerProvider>
+        <SidebarDrawerProvider>
+          <AppLayout>
             <Component {...pageProps} />
-          </SidebarDrawerProvider>
-        </AppLayout>
+          </AppLayout>
+        </SidebarDrawerProvider>
       </ChakraProvider>
     </>
   );

@@ -31,11 +31,11 @@ export const ActiveLink = ({ path, icon, title }: ActiveLink) => {
               cursor: 'pointer',
             }}
           >
-            <Icon as={icon} fontSize="40" pr="10px" />
+            <Icon as={icon} fontSize={['36', '40']} pr="10px" />
 
             <Text
               as="a"
-              fontSize="24px"
+              fontSize={['20px', '24px']}
               p="0 0.5rem"
               fontWeight={isActive ? 500 : 400}
               color={isActive ? 'gray.50' : 'gray.200'}

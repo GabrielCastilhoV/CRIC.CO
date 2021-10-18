@@ -53,9 +53,9 @@ export const Sidebar = () => {
   }
 
   return (
-    <Flex h="full" bg="gray.700" align="center" justify="center" py={5}>
+    <Flex h="full" bg="gray.700" align="center" justify="center" py={10}>
       <Box h="full">
-        <Stack spacing="40px">
+        <Stack spacing="40px" h="full" display="flex" justify="space-between">
           <Link href="/" passHref>
             <Box as="a">
               <Image src="/assets/logo.svg" alt="CRIC.CO" />

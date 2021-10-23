@@ -3,7 +3,7 @@ import { Title } from './Title';
 
 export const Banner = () => {
   return (
-    <Box w="90%" m="0 auto">
+    <Box w="100%" mt="50px">
       <Title name="Todays Match" />
 
       <Image src="/assets/bannerMobile.png" alt="Banner IPL 2021" />

@@ -6,7 +6,7 @@ interface ITitle {
 
 export const Title = ({ name }: ITitle) => {
   return (
-    <Box mb="10px">
+    <Box mb="20px">
       <Flex align="center">
         <Text py="10px" mr="10px" w="200px">
           {name}

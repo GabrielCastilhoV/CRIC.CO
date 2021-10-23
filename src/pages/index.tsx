@@ -1,11 +1,11 @@
 import { NextPage } from 'next';
 
 import { Box } from '@chakra-ui/react';
-import { Banner } from '@/components/elements/Banner';
+import { HomeLayout } from '@/components/layouts/Home';
 
 const HomePage: NextPage = () => (
-  <Box>
-    <Banner />
+  <Box mt="40px">
+    <HomeLayout />
   </Box>
 );
 

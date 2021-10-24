@@ -1,7 +1,6 @@
 import { Box, Flex, Text, Icon } from '@chakra-ui/react';
 import { useRouter } from 'next/router';
 import Link from 'next/link';
-import { useEffect, useState } from 'react';
 import { ElementType } from 'react';
 
 interface ActiveLink {
@@ -11,15 +10,15 @@ interface ActiveLink {
 }
 
 export const ActiveLink = ({ path, icon, title }: ActiveLink) => {
-  const router = useRouter();
+  const { asPath } = useRouter();
 
-  const [isActive, setIsActive] = useState(false);
-
-  useEffect(() => {
-    if (router.pathname === path) {
-      setIsActive(true);
+  function activeItem() {
+    if (path === asPath) {
+      return true;
     }
-  }, [router, path]);
+
+    return false;
+  }
 
   return (
     <Box h="full" position="relative">
@@ -37,8 +36,8 @@ export const ActiveLink = ({ path, icon, title }: ActiveLink) => {
               as="a"
               fontSize={['20px', '24px']}
               p="0 0.5rem"
-              fontWeight={isActive ? 500 : 400}
-              color={isActive ? 'gray.50' : 'gray.200'}
+              fontWeight={activeItem() ? 500 : 400}
+              color={activeItem() ? 'gray.50' : 'gray.200'}
               transition="opacity 0.3s"
               _hover={{
                 opacity: '0.8',
@@ -49,7 +48,7 @@ export const ActiveLink = ({ path, icon, title }: ActiveLink) => {
           </Flex>
         </Link>
       </Flex>
-      {isActive && (
+      {activeItem() && (
         <Box
           h="full"
           borderRadius="5px"

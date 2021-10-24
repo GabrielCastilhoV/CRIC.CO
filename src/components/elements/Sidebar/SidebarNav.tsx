@@ -6,8 +6,8 @@ import {
   RiHome3Line,
   RiMoneyDollarCircleLine,
   RiSettingsLine,
+  RiBarChart2Line,
 } from 'react-icons/ri';
-import { HiOutlineChartPie } from 'react-icons/hi';
 import { CgGames } from 'react-icons/cg';
 import { BiMessageRounded } from 'react-icons/bi';
 
@@ -16,7 +16,11 @@ export function SidebarNav() {
     <Stack spacing={9} align="flex-start">
       <ActiveLink icon={RiHome3Line} title="Home" path="/" />
 
-      <ActiveLink icon={HiOutlineChartPie} title="Charts" path="/charts" />
+      <ActiveLink
+        icon={RiBarChart2Line}
+        title="Points Table"
+        path="/classification"
+      />
 
       <ActiveLink icon={CgGames} title="Games" path="/games" />
 

@@ -1,8 +1,7 @@
 import { NextPage } from 'next';
 
 import { Box } from '@chakra-ui/react';
-import { HomeLayout } from '@/components/layouts/Home';
-import { PointsTable } from '@/components/modules/PointsTable';
+import { PointsTable } from '@/components/layouts/PointsTable';
 
 const Classification: NextPage = () => (
   <Box mt={['40px', '10px']}>

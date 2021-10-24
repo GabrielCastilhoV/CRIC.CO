@@ -8,13 +8,19 @@ interface ICard {
 
 export const Card = ({ title, shortDescription, image }: ICard) => {
   return (
-    <Box w="100%" h="100%" position="relative">
+    <Box
+      w="100%"
+      h="100%"
+      position="relative"
+      transition="opacity 0.3s"
+      _hover={{ cursor: 'pointer', opacity: '0.8' }}
+    >
       <Image borderRadius="10px" src={image} alt={title} />
 
       <Flex
         position="absolute"
         bottom="0"
-        p="0 10px"
+        p="10px"
         w="100%"
         h="100%"
         align="center"

@@ -4,7 +4,7 @@ import { Box } from '@chakra-ui/react';
 import { HomeLayout } from '@/components/layouts/Home';
 
 const HomePage: NextPage = () => (
-  <Box mt="40px">
+  <Box mt={['40px', '10px']}>
     <HomeLayout />
   </Box>
 );
